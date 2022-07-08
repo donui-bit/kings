@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  worker:
+    build: .
+    environment:
+      APP_ID: $APP_ID
+      API_HASH: $API_HASH
+      TOKEN: $TOKEN
+      ADMIN: $ADMIN
+      DB_URL: $DB_URL
+      DB_NAME: $DB_NAME

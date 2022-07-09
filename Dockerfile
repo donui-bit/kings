@@ -1,10 +1,6 @@
 FROM python:3
 
-RUN mkdir /EvaMaria
-WORKDIR /EvaMaria
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
-RUN mkdir /EvaMaria
-WORKDIR /EvaMaria
+RUN mkdir /kings
+WORKDIR /kings
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
